@@ -808,14 +808,13 @@
     <form id=renderForm>
         <div id=div_content class=div_content>
             <div id=header_holder>
-                <div id=title_holder class=todo>
+                <div id=title_holder class=todo style="display: flex">
                     <div id=title_icon class=title_icon><i class=i-icon-menu></i></div>
-                    <div id=title_content style=max-width:287px>
+                    <div id=title_content style="flex-grow: 1">
                         <nobr>疫情期间学生请假外出验证:扫码验证</nobr>
                     </div>
-                    <div>
+                    <div style="min-width: max-content">
                         <div id=title_description>流水号:1<span id="waterNum"></span></div>
-                        <div id=title_description_short style=display:none>流水号:1<span id="waterNum2"></span></div>
                     </div>
                 </div>
 
@@ -835,7 +834,7 @@
                 <div id=nav_menu style=display:none></div>
 
                 <div id=render_holder>
-                    <div id=form_holder style=width:428px;display:block>
+                    <div id=form_holder style=width:100vw;display:block>
                         <div class=infoplus_view_wrap_outer>
                             <div class=infoplus_view_wrap_inner>
                                 <div id=infoplus_view_2030_0 class=infoplus_view>
@@ -1197,7 +1196,7 @@
     }
 
     const waterNum = getRandomIntInclusive(500000, 700000)
-    $('#waterNum,#waterNum2').text(waterNum)
+    $('#waterNum').text(waterNum)
 
     $('#button_b4c7b8c2-a8f3-4fab-ade5-d0b639504681').click(() => {
         $('#button_b4c7b8c2-a8f3-4fab-ade5-d0b639504681').disabled = true
