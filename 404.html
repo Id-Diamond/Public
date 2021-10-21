@@ -985,7 +985,7 @@
                                                             <table
                                                                 id="tableDetail"
                                                                 style="WORD-WRAP:break-word;BORDER-TOP:medium none;BORDER-RIGHT:medium none;WIDTH:288px;BORDER-COLLAPSE:collapse;TABLE-LAYOUT:fixed;BORDER-BOTTOM:medium none;BORDER-LEFT:medium none;
-                                                                    margin-top: 5px"
+                                                                    margin-top: 5px;display: none"
                                                                 class=xdLayout bordercolor=buttontext border=1>
                                                                 <colgroup>
                                                                     <col style=WIDTH:105px width=105>
@@ -1204,6 +1204,7 @@
         setTimeout(() => {
             $('#button_b4c7b8c2-a8f3-4fab-ade5-d0b639504681').disabled = false
             $('#loading1,#loading2').fadeOut(200)
+            $('#tableDetail').show()
         }, 500)
     })
 
